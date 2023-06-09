@@ -8,6 +8,9 @@ function toggleDark() {
     $('p').addClass('text-white');
     $('a').addClass('link-light');
     $('.dropdown-menu').addClass('dropdown-menu-dark');
+    $('input').attr('style', 'color: white');
+    $('label').addClass('text-white')
+    $('textarea').addClass('text-white')
 }
 
 function toggleLight() {
@@ -20,4 +23,7 @@ function toggleLight() {
     $('p').removeClass('text-white');
     $('a').removeClass('link-light');
     $('.dropdown-menu').removeClass('dropdown-menu-dark');
+    $('input').removeAttr('style');
+    $('label').removeClass('text-white');
+    $('textarea').removeClass('text-white')
 }
