@@ -36,8 +36,8 @@
             <a class="navbar-brand" href="#">
                 <img src="images/amka-website-favicon-black.png" alt="logo" style="max-width: 50px; height: auto;" class="d-inline-block align-text-top">
             </a>
-            <div class="collapse navbar-collapse position-relative" id="navbarToggler">
-                <ul class="navbar-nav mb-2 mb-lg-0 position-absolute end-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#project-container">PROJECTS</a>
                     </li>
@@ -47,24 +47,22 @@
                     <li class="nav-item mx-3">
                         <a class="nav-link" href="#contact-container">CONTACT</a>
                     </li>
-                    <li class="nav-item mx-3">
-                        <div class="dropdown">
-                            <a role="button" href="#" class="btn dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
-                                THEME
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-sm-end">
-                                <li>
-                                    <button class="dropdown-item" type="button" onclick="toggleDark()">
-                                        <img src="images/darkicon.png" style="width: 25px; height: 25px;"> Dark
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="dropdown-item" type="button" onclick="toggleLight()">
-                                        <img src="images/lighticon.png" style="width: 25px; height: 25px;"> Light
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="nav-item dropdown mx-3">
+                        <a role="button" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            THEME
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-sm-end">
+                            <li>
+                                <button class="dropdown-item" type="button" onclick="toggleDark()">
+                                    <img src="images/darkicon.png" style="width: 25px; height: 25px;"> Dark
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button" onclick="toggleLight()">
+                                    <img src="images/lighticon.png" style="width: 25px; height: 25px;"> Light
+                                </button>
+                            </li>
+                        </ul>
                         
                     </li>
                 </ul>
@@ -78,7 +76,7 @@
             <div class="col d-flex flex-column justify-content-center">
                 <p class="display-1 text-uppercase">Amka Tsendjargal</p>
                 <p class="display-5">Software Developer</p>
-                <div class="btn-group dropend">
+                <div class="btn-group dropend mb-3">
                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Resume
                     </button>
@@ -86,7 +84,7 @@
                       <li><a class="dropdown-item" href="resume.pdf" download="resume_amka">.pdf</a></li>
                       <li><a class="dropdown-item" href="resume.docx" download="resume_amka">.docx</a></li>
                     </ul>
-                  </div>
+                </div>
                 
             </div>
             <div class="col">
